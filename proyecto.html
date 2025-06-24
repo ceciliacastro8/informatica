@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cursos de Informática</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url('fondo.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      padding: 0;
+    }
+
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      z-index: -1;
+    }
+
+    header {
+      background-color: #2c3e50;
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f1c40f;
+    }
+
+    .contenedor-cursos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 50px 20px;
+    }
+
+    .tarjeta-curso {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .tarjeta-curso:hover {
+      transform: scale(1.05);
+    }
+
+    .tarjeta-curso img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .contenido {
+      padding: 20px;
+    }
+
+    .contenido h2 {
+      font-size: 1.5rem;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .contenido p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .boton {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #3498db;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background-color 0.3s;
+    }
+
+    .boton:hover {
+      background-color: #2980b9;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      margin-top: 50px;
+    }
+
+    footer p {
+      margin: 10px 0;
+    }
+
+    .redes-sociales a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .redes-sociales a:hover {
+      color: #f1c40f;
+
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cursos de Informática</h1>
+    <nav>
+         </nav>
+  </header>
+
+  <div class="contenedor-cursos">
+
+    <!-- Curso 1 -->
+    <div class="tarjeta-curso">
+      <img src="programacion.jpg" alt="Programación Web">
+      <div class="contenido">
+        <h2>Programación Web</h2>
+        <p> En este curso aprenderás desde cero a construir páginas web utilizando HTML para la estructura, CSS para el diseño visual y JavaScript para añadir interactividad. Durante 8 semanas conocerás cómo crear formularios, menús interactivos y páginas adaptables a móviles, además de publicar tus propios sitios en línea. Es ideal para principiantes, estudiantes o cualquier persona interesada en iniciar su camino como desarrollador web.</p>
+       
+      </div>
+    </div>
+
+    <!-- Curso 2 -->
+    <div class="tarjeta-curso">
+      <img src="ciber.jpg" alt="Ciberseguridad">
+      <div class="contenido">
+        <h2>Ciberseguridad</h2>
+        <p> es el conjunto de prácticas y tecnologías destinadas a proteger sistemas informáticos, redes y datos frente a accesos no autorizados, ataques o daños. En este curso aprenderás los fundamentos esenciales para detectar amenazas, prevenir hackeos, proteger contraseñas, identificar virus y navegar de forma segura..</p>
+    
+      </div>
+    </div>
+
+    <!-- Curso 3 -->
+    <div class="tarjeta-curso">
+      <img src="base.jpg" alt="Bases de Datos">
+      <div class="contenido">
+        <h2>Bases de Datos</h2>
+        <p> son sistemas organizados que permiten almacenar, gestionar y recuperar grandes cantidades de información de forma eficiente y segura.</p>
+     
+      </div>
+    </div>
+  
+  </div>
+<section class="destacado">
+  <h2>¡Sé parte del futuro digital!</h2>
+ 
+<div id="anuario" class="contrainer">
+
+<a href="file:///E:/anuario/index%20anuario.html" class="boton">Tarjetas</a>
+</div> 
+</ul>
+
+</section>
+
+  <script>
+  function mostrarInformacion() {
+    const info = document.getElementById("infoAdicional");
+    info.style.display = "block"; // muestra el contenido oculto
+  }
+</script>
+</script>
+</body>
+</html>
+
+<div class="container">
+    <!-- Programación Web -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/919/919827.png" alt="Programación Web">
+      <h2>Programación Web</h2>
+      <p>¿Sabías que el primer sitio web de la historia aún está disponible? Fue creado por Tim Berners-Lee en 1991 para explicar qué era la web.</p>
+    </div>
+
+    <!-- Ciberseguridad -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2889/2889676.png" alt="Ciberseguridad">
+      <h2>Ciberseguridad</h2>
+      <p>La palabra “hacker” no siempre tuvo una connotación negativa. Originalmente, era un término para referirse a expertos creativos en tecnología.</p>
+    </div>
+
+    <!-- Bases de Datos -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3374/3374550.png" alt="Bases de Datos">
+      <h2>Bases de Datos</h2>
+      <p>Las bases de datos modernas pueden almacenar y procesar petabytes de información, algo impensable hace solo unas décadas.</p>
+    </div>
+  </div>
+
+</body>
+</html>
+
+</body>
+</html>
